@@ -57,5 +57,7 @@ export const getWetherData = async (
     return { temperature, precipitation }
   } catch (error) {
     throw error
+  } finally {
+    controller = null
   }
 }
